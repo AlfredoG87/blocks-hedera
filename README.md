@@ -1,4 +1,4 @@
-# COMPLUS | BSC BLOCKS
+# Hedera Blocks
 
 Indexing Hedera Blocks Data
 
