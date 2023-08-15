@@ -1,13 +1,18 @@
-# Sample Hardhat Project
+# COMPLUS | BSC BLOCKS
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Indexing Binance Smart Chain Blocks Data
 
-Try running some of the following tasks:
+## Converter Registry Contract
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+- [ConverterRegistryContract.sol](https://bscscan.com/address/0x3d2050077b256133825628ed8bb3b35b0c17f54d#code)
+
+#### Running a Local Graph Node
+
+```sh
+npm install
+npm run deploy-contract
+npm run spin-graph-node
+npm run codegen
+npm run create-subgraph
+npm run deploy-subgraph
 ```
