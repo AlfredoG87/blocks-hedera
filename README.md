@@ -1,6 +1,6 @@
 # COMPLUS | BSC BLOCKS
 
-Indexing Binance Smart Chain Blocks Data
+Indexing Hedera Blocks Data
 
 ## Converter Registry Contract
 
