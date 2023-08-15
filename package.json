@@ -1,0 +1,22 @@
+{
+  "name": "subgraph3",
+  "version": "1.0.0",
+  "description": "subgraph to index all blocks on hedera",
+  "main": "index.js",
+  "scripts": {
+    "deploy-contract": "hardhat run scripts/deploy.js --network local",
+    "spin-graph-node": "docker-compose up -d",
+    "codegen": "cd subgraph && npm run codegen",
+    "create-subgraph": "cd subgraph && npm run create",
+    "deploy-subgraph": "cd subgraph && npm run deploy",
+    "delete-subgraph": "cd subgraph && npm run delete"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hardhat": "^2.17.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0"
+  }
+}

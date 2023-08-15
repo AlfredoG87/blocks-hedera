@@ -1,0 +1,24 @@
+specVersion: 0.0.5
+description: Indexing all Hedera Blocks Data
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: BlocksHedera
+    network: local
+    source:
+      abi: ConverterRegistryContract
+      address: "0x23f5e49569A835d7bf9AefD30e4f60CdD570f225"
+      startBlock: 0
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - ConverterAddition
+      abis:
+        - name: ConverterRegistryContract
+          file: ./abis/ConverterRegistryContract.json
+      blockHandlers:
+        - handler: handleBlock
+      file: ./src/blocks.ts
