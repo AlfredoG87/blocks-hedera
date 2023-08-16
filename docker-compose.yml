@@ -22,9 +22,8 @@ services:
       ethereum: 'local:http://host.docker.internal:7546'
       GRAPH_LOG: debug
       GRAPH_ETHEREUM_GENESIS_BLOCK_NUMBER: 1
-      ETHEREUM_POLLING_INTERVAL: 1000
-      GRAPH_ETHEREUM_TARGET_TRIGGERS_PER_BLOCK_RANGE: 10
-      ETHEREUM_TRACE_STREAM_STEP_SIZE: 10
+      GRAPH_ETHEREUM_CLEANUP_BLOCKS: 'true'
+      GRAPH_MAPPING_HANDLER_TIMEOUT: 2
   ipfs:
     image: ipfs/go-ipfs:v0.10.0
     ports:

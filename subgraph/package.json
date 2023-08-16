@@ -7,7 +7,7 @@
       "build": "graph build",
       "create": "graph create blocks-hedera --node http://127.0.0.1:8020",
       "remove": "graph remove --node http://localhost:8020/ blocks-hedera",
-      "deploy": "graph deploy blocks-hedera --ipfs http://localhost:5001 --node http://127.0.0.1:8020"     
+      "deploy": "graph deploy blocks-hedera --ipfs http://localhost:5001 --node http://127.0.0.1:8020 --version-label 0.0.1"     
     },
     "devDependencies": {
       "@graphprotocol/graph-cli": "0.53.0",
