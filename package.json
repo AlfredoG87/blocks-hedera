@@ -1,5 +1,5 @@
 {
-  "name": "subgraph3",
+  "name": "blocks-hedera",
   "version": "1.0.0",
   "description": "subgraph to index all blocks on hedera",
   "main": "index.js",
