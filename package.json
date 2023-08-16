@@ -9,7 +9,7 @@
     "codegen": "cd subgraph && npm run codegen",
     "create-subgraph": "cd subgraph && npm run create",
     "deploy-subgraph": "cd subgraph && npm run deploy",
-    "delete-subgraph": "cd subgraph && npm run delete"
+    "remove-subgraph": "cd subgraph && npm run remove"
   },
   "author": "",
   "license": "ISC",
