@@ -1,9 +1,9 @@
 import { ethereum } from "@graphprotocol/graph-ts"
-import { Block } from "../generated/schema"
+import { HederaBlock } from "../generated/schema"
 
 export function handleBlock(block: ethereum.Block): void {
     let id = block.hash.toHex()
-    let blockEntity = new Block(id);
+    let blockEntity = new HederaBlock(id);
     blockEntity.number = block.number;
     blockEntity.timestamp = block.timestamp;
     blockEntity.parentHash = block.parentHash.toHex();
